@@ -28,7 +28,8 @@ sed -i "s/443:443/${SIGNAL_TLS_PORT}:443/" my-docker-compose.yml
 # remove the 80 port
 sed -i "/80:80/d" my-docker-compose.yml
 
-echo "done"
+echo "Done! You can run your modified docker-compose.yml with the following command:"
+echo "docker-compose -f my-docker-compose.yml up -d"
 
 
 
